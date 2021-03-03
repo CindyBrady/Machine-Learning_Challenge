@@ -5,5 +5,9 @@ app = Flask(__name__)
 def home():
   return render_template("index.html")
 
+@app.route("/NBA_Tableau/")
+def dashboard():
+  return render_template("NBA_Tableau.html")
+
 if __name__ == "__main__":
   app.run(debug=True)
