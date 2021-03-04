@@ -9,5 +9,9 @@ def home():
 def dashboard():
   return render_template("NBA_Tableau.html")
 
+@app.route("/powerpoint/")
+def powerpoint():
+  return render_template("powerpoint.html")
+
 if __name__ == "__main__":
   app.run(debug=True)
